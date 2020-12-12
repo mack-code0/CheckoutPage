@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="boxicons-2.0.3/css/boxicons.min.css">
+    <style>
+        body{
+            background-color: #f5f5f5;
+        }
+        #co-text{
+            font-weight: 500;
+            color: #686868;
+        }
+        .address, .delivery{
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+        .address-top{
+            border-bottom: 1px solid #ebebeb;
+        }
+        .checkout-total{
+            border-top: 1px solid #ebebeb;
+        }
+        .small-grey{
+            font-size: 13px;
+            font-weight: bolder;
+            color: #686868;
+        }
+        .dark-grey{
+            font-size: 14px;
+            font-weight: bolder;
+            color: #2e2e2e;
+        }
+        .delivery-date{
+            color: #000000;
+        }
+        .box-heading{
+            color: #000000;
+            font-weight: bolder;
+        }
+        .checkout-btn .btn{
+            background-color: #f68b1e !important;
+            color: #ffffff;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="d-flex w-50 mx-auto">
+        <div class="left-side w-75">
+            <small id="co-text">CHECKOUT</small>
+
+            <div class="address w-100 mb-2">
+                <div class="address-top d-flex justify-content-between w-100 py-2 px-3">
+                    <div class="d-flex align-items-center">
+                        <span style="color: rgb(0, 196, 0); font-size: larger;" class="bx bx-radio-circle-marked mr-3"></span>
+                        <span class="box-heading">1. ADDRESS DETAILS</span>
+                    </div>
+                    <a style="color: #f68b1e;" class="box-heading" href="#">CHANGE</a>
+                </div>
+                <div class="address-bottom py-3 px-5">
+                    <span class="box-heading">Macaulay Uzu</span><br>
+                    <span class="small-grey">19, Oluobadare, Alakuko, Alagbado, Lagos, Nigeria</span><br>
+                    <span class="small-grey">+2348071685779</span>
+                </div>
+            </div>
+
+            <div class="delivery pb-2 w-100">
+                <div class="delivery-method w-100">
+                    <div class="delivery-top d-flex justify-content-between w-100 py-2 px-3">
+                        <div class="d-flex align-items-center">
+                            <span style="color: #999999; font-size: larger;" class="bx bx-radio-circle mr-3"></span>
+                            <span class="box-heading">2. DELIVERY METHOD</span>
+                        </div>
+                    </div>
+                    <div class="delivery-bottom py-3 px-5">
+                        <span class="box-heading">Door Delivery</span><br>
+                        <span class="small-grey">Delivered between <span class="delivery-date">Monday 7 Dec</span> and <span class="delivery-date">Wed 9 Dec</span> for <span style="color: #f68b1e">500 USD</span></span>
+                    </div>
+                </div>
+                
+                <div class="shipment-details pb-2 w-100">
+                    <div class="shipment-top pt-3 pb-4 px-5">
+                        <span class="box-heading">Shipment Details</span><br>
+                    </div>
+                    <div class="shipment-info px-5 mb-2">
+                        <span class="small-grey">Shipment 1 of 2</span><br>
+                        <span class="small-grey"><span class="shipment-q">1x</span> Jim Beam Kentucky Straight</span><br>
+                        <span class="small-grey">Delivered between <span class="delivery-date">Monday 7 Dec</span> and <span class="delivery-date">Wed 9 Dec</span>
+                    </div>
+                    <div class="shipment-info px-5">
+                        <span class="small-grey">Shipment 2 of 2</span><br>
+                        <span class="small-grey"><span class="shipment-q">1x</span> Jim Beam Kentucky Straight</span><br>
+                        <span class="small-grey">Delivered between <span class="delivery-date">Monday 7 Dec</span> and <span class="delivery-date">Wed 9 Dec</span>
+                    </div>
+                </div>
+
+                <div class="checkout-total px-5 py-2 w-100">
+                    <div class="subtotal d-flex justify-content-between">
+                        <span class="dark-grey">Subtotal</span>
+                        <span class="small-grey delivery-date">$ 4, 500 USD</span>
+                    </div>
+                    <div class="delivery-fee d-flex justify-content-between">
+                        <span class="dark-grey">Delivery Fee</span>
+                        <span class="small-grey delivery-date">$ 750 USD</span>
+                    </div>
+                    <div class="main-total d-flex justify-content-between pt-3">
+                        <span class="dark-grey">Total</span><br>
+                        <span style="color: #f68b1e;" class="small-grey delivery-date">$ 5, 200 USD</span>
+                    </div>
+                    <span class="small-grey d-flex justify-content-around pt-2"><small>You'll be able to add a voucher in the next step</small></span>
+                </div>
+                <div class="checkout-btn d-flex justify-content-around py-2 px-5">
+                    <button class="btn w-100">PROCEED TO NEXT STEP</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side"></div>
+    </div>
+
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="success.js"></script>
+
+</body>
+</html>
